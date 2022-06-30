@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it",
+      "user": "Ethan",
+      "id": 1
+    },
+    {
+      "title": "My Second Blog",
+      "body": "Why do we use it",
+      "user": "Ethan",
+      "id": 2
+    },
+    {
+      "title": "Test",
+      "body": "Test",
+      "user": "tech",
+      "id": 3
+    },
+    {
+      "title": "Test2",
+      "body": "Test2",
+      "user": "eng",
+      "id": 4
+    }
+  ]
+}

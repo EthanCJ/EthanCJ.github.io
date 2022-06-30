@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="capLogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9081369"
+     inkscape:cx="34.528651"
+     inkscape:cy="27.250553"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g332"
+       transform="matrix(0.22403335,0,0,0.25265273,-13.289546,-14.131386)"
+       style="stroke-width:4.20322">
+      <rect
+         style="fill:#000000;stroke:#e6e6e6;stroke-width:1.11226"
+         id="rect61"
+         width="28.732201"
+         height="15.981943"
+         x="80.603798"
+         y="67.510376"
+         ry="1.9135025"
+         transform="matrix(0.99613285,0.0878598,-0.1114731,0.99376745,0,0)" />
+      <rect
+         style="fill:#000000;stroke:#e6e6e6;stroke-width:1.34639"
+         id="rect273"
+         width="39.677624"
+         height="19.166994"
+         x="147.90833"
+         y="101.08618"
+         ry="0"
+         transform="matrix(1,0,-0.73112301,0.68224566,0,0)" />
+      <ellipse
+         style="fill:#333333;stroke:#ffffff;stroke-width:1.1121"
+         id="path327"
+         cx="86.699638"
+         cy="73.443916"
+         rx="1.5226176"
+         ry="0.53739446" />
+    </g>
+  </g>
+</svg>
