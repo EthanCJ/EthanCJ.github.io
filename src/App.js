@@ -2,8 +2,9 @@ import Navbar from './Navbar';
 import Home from './Home'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Create from './Create';
-import BlogDetails from './BlogDetails';
+import PostDetails from './PostDetails';
 import NotFound from './NotFound';
+import LeftNav from './Leftnav';
 
 function App() {
   const title='This is the website title';
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar/>
+        <LeftNav/>
         <div className="content">
           <Switch>
             <Route exact path="/">
@@ -23,8 +25,8 @@ function App() {
                 <Create/>
             </Route>
 
-            <Route exact path="/blogs/:id">
-                <BlogDetails/>
+            <Route exact path="/posts/:id">
+                <PostDetails/>
             </Route>
 
             <Route path="*">

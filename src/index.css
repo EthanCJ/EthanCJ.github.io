@@ -4,20 +4,42 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #f1356d;;
 }
+.leftnav{
+  border: 1px solid black;
+  border-radius: 3px;
+  width: fit-content;
+  float: left;
+}
+
+.links{
+  text-decoration: none;
+  padding: 20px;
+}
+
+.leftnav tr{
+  padding-top: 50px;
+}
+
+.logo{
+  size:50px;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  background-color: #333;
+  border-bottom: 2px solid #000000;
 }
 .navbar h1 {
+  font-size: 40px;;
   color: #f1356d;
 }
-.navbar .links {
+
+.navbar {
   margin-left: auto;
 }
 .navbar a {
@@ -25,8 +47,8 @@
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover {
-  color: #f1356d;
+.navbar links:hover {
+  size:20px;
 }
 .content {
   max-width: 600px;
@@ -35,38 +57,38 @@
 }
 
 /* Change margin bottom later for spacing */
-.blog-preview{
+.post-preview{
   padding: 10px 16px;
   margin: 0 0 20px;
   border: 1px solid black;
 }
 
-.blog-preview:hover{
+.post-preview:hover{
   box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.1);
 }
 
-.blog-preview h2{
+.post-preview h2{
   font-size: 20px;
   color: black;
   margin-bottom: 8px;
 }
 
 
-.blog-preview a{
+.post-preview a{
   text-decoration: none;
 }
 
-.blog-details h2{
+.post-details h2{
   font-size:20px;
   color: red;
   margin-bottom: 5px;
 }
 
-.blog-details div{
+.post-details div{
   margin: 20px 0;
 }
 
-/* create new blog form */
+/* create new post form */
 .create {
   max-width: 400px;
   margin: 0 auto;

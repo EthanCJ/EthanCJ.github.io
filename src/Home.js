@@ -1,14 +1,14 @@
-import BlogList from "./BlogList";
+import PostList from "./PostList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const {data: blogs,isPending,error}=useFetch('http://localhost:8000/blogs');
+    const {data: posts,isPending,error}=useFetch('http://localhost:8000/posts');
 
     return ( 
         <div className="home">
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {blogs && <BlogList blogs={blogs} title="All blogs"/>}
+            {posts && <PostList posts={posts} title="All posts"/>}
         </div>
      );
 }

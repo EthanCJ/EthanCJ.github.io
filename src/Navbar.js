@@ -1,13 +1,11 @@
-import {Link} from 'react-router-dom';
+import capLogo from './capLogo.png'
 
 const  Navbar= () => {
     return (  
         <nav className="navbar">
-            <h1>Navbar title</h1>
-            <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="/create">Make Post</Link>
-            </div>
+            <img src={capLogo} alt="logo" height={100} width={100}/>
+
+            <h1>Psy-STEM</h1>
         </nav>
     );
 }

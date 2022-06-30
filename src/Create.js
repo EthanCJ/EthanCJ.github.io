@@ -5,16 +5,17 @@ const Create = () => {
     const [title,setTitle]=useState('');
     const [body,setBody]=useState('');
     const [user,setUser]=useState('');
+    const [topic,setTopic]=useState('sci');
     const history=useHistory();
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        const blog={title,body,user};
+        const post={title,body,user,topic};
 
-        fetch('http://localhost:8000/blogs',{
+        fetch('http://localhost:8000/posts',{
             method: 'POST',
             headers: {"Content-Type":"application/json"},
-            body: JSON.stringify(blog)
+            body: JSON.stringify(post)
         })
 
         history.push('/')
@@ -24,22 +25,30 @@ const Create = () => {
         <div className="create">
             <h2>Create a post</h2>
             <form onSubmit={handleSubmit}>
-                <label>Blog Title:</label>
+                <label>Post Title:</label>
                 <input type="text"
                 required
                 value={title}
                 onChange={(e)=>setTitle(e.target.value)}
                 />
-            <label>Blog body:</label>
+            <label>Post body:</label>
             <textarea
                 required
                 value={body}
                 onChange={(e)=>setBody(e.target.value)}
             ></textarea>
-            <label>Catagory:</label>
-            <select
+
+            <label>Name:</label>
+            <textarea
+                required
                 value={user}
                 onChange={(e)=>setUser(e.target.value)}
+            ></textarea>
+
+            <label>Catagory:</label>
+            <select
+                value={topic}
+                onChange={(e)=>setTopic(e.target.value)}
             >
                 <option value="sci">Science</option>
                 <option value="tech">Technology</option>
