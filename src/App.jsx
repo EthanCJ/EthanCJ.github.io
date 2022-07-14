@@ -8,7 +8,6 @@ import LeftNav from './Leftnav';
 
 function App() {
   const title='This is the website title';
-  const likes=50;
 
   return (
     <Router>
