@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const PostList = ({posts,title}) => {
-
+    const { t, i18n } = useTranslation();
 
     return ( 
         <div className="post-list">
@@ -9,10 +10,10 @@ const PostList = ({posts,title}) => {
                 <div className="post-preview" key={post.id}>
                     <Link to={`/posts/${post.id}`}>
                         <h2>{post.title}</h2>
-                        <p>Sujet: {post.topic}</p>
-                        <button>Like {post.likes}</button>
-                        <button>Share</button>
-                        <button>Report</button>
+                        <p>{t("postTopic")} {post.topic}</p>
+                        <button>{t("like")} {post.likes}</button>
+                        <button>{t("share")}</button>
+                        <button>{t("report")}</button>
                     </Link>
                 </div>
             ))}

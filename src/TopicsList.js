@@ -1,9 +1,11 @@
-const TopicsList = ({topics,title}) => {
+import { useTranslation } from "react-i18next";
 
+const TopicsList = ({topics,title}) => {
+    const { t, i18n } = useTranslation();
 
     return ( 
         <div className="topics-list">
-            <h1>Follow Topic</h1>
+            <h1>{t("topic")}</h1>
             {topics.map((topic)=>(
                 <div className="select-topic" key={topic.id}>
                         <input type="checkbox" className="checkbox1"></input>
