@@ -2,7 +2,7 @@ import PostList from "./PostList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const {data: posts,isPending,error}=useFetch('http://localhost:8000/posts');
+    const {data: posts,isPending,error}=useFetch('https://my-json-server.typicode.com/EthanCJ/SEG-JSON-DB');
 
     return ( 
         <div className="home">
