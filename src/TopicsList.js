@@ -3,6 +3,7 @@ const TopicsList = ({topics,title}) => {
 
     return ( 
         <div className="topics-list">
+            <h1>Follow Topic</h1>
             {topics.map((topic)=>(
                 <div className="select-topic" key={topic.id}>
                         <input type="checkbox" className="checkbox1"></input>

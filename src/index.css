@@ -266,4 +266,13 @@
   width: 16px;
   float: left;
   align-self: center;
+  content: "+";
+}
+
+.checkbox1:checked {
+  width: 0px;
+}
+
+.TopicsList h1{
+  text-decoration: underline;
 }
