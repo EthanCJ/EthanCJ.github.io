@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Answer = () => {
+    const { t, i18n } = useTranslation();
     const [title,setTitle]=useState('');
     const [body,setBody]=useState('');
     const [user,setUser]=useState('');
@@ -23,29 +25,24 @@ const Answer = () => {
 
     return ( 
         <div className="answer">
-            <h2>Answer a Question</h2>
+            <h2>{t("answerQuestion")}</h2>
             <form onSubmit={handleSubmit}>
-                <label>Post Title:</label>
-                <input type="text"
-                required
-                value={title}
-                onChange={(e)=>setTitle(e.target.value)}
-                />
-            <label>Post body:</label>
+
+            <label>{t("answerQuestion")}</label>
             <textarea
                 required
                 value={body}
                 onChange={(e)=>setBody(e.target.value)}
             ></textarea>
 
-            <label>Name:</label>
+            <label>{t("postName")}</label>
             <textarea
                 required
                 value={user}
                 onChange={(e)=>setUser(e.target.value)}
             ></textarea>
 
-            <label>Catagory:</label>
+            <label>{t("catagory")}</label>
             <select
                 value={topic}
                 onChange={(e)=>setTopic(e.target.value)}
@@ -57,11 +54,11 @@ const Answer = () => {
             </select>
             
 
-            <button>Post</button>
+            <button>{t("post")}</button>
 
             </form>
 
-            <button className="navButton">Find a different question -{">"}</button>
+            <button className="navButton">{t("navButton")} -{">"}</button>
         </div>
      );
 }

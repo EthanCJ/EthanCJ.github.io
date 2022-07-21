@@ -23,8 +23,8 @@ const createNavBar=()=> {
                             <input type="search" class="form-control rounded" className="search" placeholder={t("search")} aria-label="Search" aria-describedby="search-addon" />
                         </div>
                     </Col>
-                    <Col>
-                        <select className="form-select form-select-sm language-switcher" onClick={handleLanguage}>
+                    <Col className="navCol3">
+                        <select className="langButton" onClick={handleLanguage}>
                             <option value="en">English</option>
                             <option value="fr">French</option>
                         </select>

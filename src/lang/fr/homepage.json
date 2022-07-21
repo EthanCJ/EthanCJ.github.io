@@ -9,5 +9,16 @@
     "like": "Aimez",
     "report": "Report",
     "share": "Signalez",
-    "search": "Recherche"
+    "search": "Recherche",
+    "createPost":"Créer un Poste",
+    "postTitle":"Titre du Poste:",
+    "postBody":"Corps:",
+    "postName":"Votre Nom:",
+    "catagory":"Catégory:",
+    "postButton":"Postez",
+    "askQuestion":"Ask a Question",
+    "questionTitle":"Titre du Question",
+    "createQuestion":"Details du question",
+    "answerQuestion":"Votre Réponse",
+    "navButton":"Trouver une autre question"
 }

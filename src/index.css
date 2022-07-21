@@ -87,6 +87,15 @@
   width: 50%;
 }
 
+.navCol3{
+  align-items: center;
+}
+
+.langButton{
+  margin: 20px 20px auto;
+}
+
+
 .logo{
   size: 60px;
   float: left;

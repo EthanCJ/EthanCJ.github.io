@@ -9,5 +9,16 @@
     "like": "Like",
     "report": "Report",
     "share": "Share",
-    "search": "Search"
+    "search": "Search",
+    "createPost":"Create a post",
+    "postTitle":"Post Title:",
+    "postBody":"Post Body:",
+    "postName":"Name:",
+    "catagory":"Catagory:",
+    "postButton":"Post",
+    "askQuestion":"Ask a Question",
+    "questionTitle":"Question Title",
+    "createQuestion":"Question Details",
+    "answerQuestion":"Your Answer",
+    "navButton":"Find another question"
 }
