@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="questiontLogo.svg"
+   inkscape:export-filename="questiontLogo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="8"
+     inkscape:cx="25"
+     inkscape:cy="41.875"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect275"
+       style="fill:#333333;stroke:#ffffff;stroke-width:0.264584"
+       inkscape:transform-center-x="-14.607493"
+       inkscape:transform-center-y="-11.620602"
+       d="M 13.230114 1.2389743 A 6.6474003 6.6534383 44.99991 0 0 6.5848588 7.9002318 A 6.6474003 6.6534383 44.99991 0 0 6.6470105 8.7760445 L 9.7150461 8.7781935 A 3.4149898 3.6487011 89.53753 0 1 9.5862263 7.8952565 A 3.4149898 3.6487011 89.53753 0 1 13.232539 4.4739158 A 3.4149898 3.6487011 89.53753 0 1 16.883973 7.8831593 A 3.4149898 3.6487011 89.53753 0 1 13.23766 11.303983 A 3.4149898 3.6487011 89.53753 0 1 11.854607 11.050994 L 11.866221 14.135025 C 11.866062 14.141208 11.865718 14.147419 11.865718 14.15363 L 11.865905 19.917104 C 11.865905 20.474919 12.508311 20.923957 13.306367 20.923957 C 14.104424 20.923957 14.74687 20.474794 14.74687 19.916979 L 14.74684 14.362794 A 6.6474003 6.6534383 44.99991 0 0 19.885341 7.8781841 A 6.6474003 6.6534383 44.99991 0 0 13.230114 1.2389743 z "
+       transform="matrix(0.99999863,0.00165766,-7.497452e-4,0.99999972,0,0)" />
+    <rect
+       style="fill:#333333;stroke:#ffffff;stroke-width:0.264592"
+       id="rect325"
+       width="2.7167976"
+       height="2.8981297"
+       x="-6.7305179"
+       y="24.742609"
+       rx="0"
+       ry="1.3583988"
+       inkscape:transform-center-x="-0.010444559"
+       inkscape:transform-center-y="0.048862381"
+       transform="matrix(0.74568522,-0.6662984,0.65803646,0.75298607,0,0)" />
+  </g>
+</svg>

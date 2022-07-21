@@ -4,13 +4,75 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #f1356d;;
+  color: #f1356d;
+  overflow: hidden;
+  text-decoration: none;
 }
-.leftnav{
+
+.topicsHome{
+  padding: 20px;
   border: 1px solid black;
   border-radius: 3px;
+  height: 150px;
   width: fit-content;
+  overflow-y: scroll;
+  margin: 10px auto;
+}
+
+.topics h2{
+  text-decoration: underline;
+}
+
+.leftnav{
+  background-color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 95%;
   float: left;
+  margin: 10px 10px auto;
+  text-decoration: none;
+}
+
+.leftnav img{
+  float: left;
+}
+
+.leftnav table{
+  border: #333;;
+  width: 100%;
+}
+
+.leftnav td{
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.leftnav td:hover{
+  size: 110%;
+  background-color: rgb(199, 199, 199);
+}
+
+.row{
+  height: max-content;
+}
+
+.col {
+  float: left;
+  width: 25%;
+}
+
+.col2 {
+  background-color: rgb(204, 204, 204);
+  align-items: center;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .links{
@@ -18,17 +80,20 @@
   padding: 20px;
 }
 
-.leftnav tr{
-  padding-top: 50px;
+/*Navbar*/
+.navCol2 {
+  background-color: #333;
+  align-items: center;
+  width: 50%;
 }
 
 .logo{
-  size:50px;
+  size: 60px;
+  float: left;
 }
 
 .navbar {
   padding: 20px;
-  display: flex;
   align-items: center;
   margin: 0 auto;
   background-color: #333;
@@ -39,26 +104,27 @@
   color: #f1356d;
 }
 
-.navbar {
-  margin-left: auto;
+.navbar input{
+  width: 100%;
+  height: 35px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 3px;
+  border: 2px;
 }
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-.navbar links:hover {
-  size:20px;
-}
+
+/*Main Feed*/
 .content {
   max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  max-height: 600px;
+  margin: auto;
+  overflow-y:scroll;
 }
 
 /* Change margin bottom later for spacing */
 .post-preview{
   padding: 10px 16px;
+  background-color: white;
   margin: 0 0 20px;
   border: 1px solid black;
   border-radius: 8px;
@@ -71,9 +137,13 @@
 .post-preview h2{
   font-size: 20px;
   color: black;
+  border-bottom: 2px solid black;
   margin-bottom: 8px;
 }
 
+.post-preview button{
+  float: right;
+}
 
 .post-preview a{
   text-decoration: none;
@@ -81,7 +151,6 @@
 
 .post-details h2{
   font-size:20px;
-  color: red;
   margin-bottom: 5px;
 }
 
@@ -95,15 +164,18 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .create label {
   text-align: left;
   display: block;
 }
+
 .create h2 {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 30px;
 }
+
 .create input, .create textarea, .create select {
   width: 100%;
   padding: 6px 10px;
@@ -120,4 +192,78 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* question new post form */
+.question {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.question label {
+  text-align: left;
+  display: block;
+}
+.question h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.question input, .question textarea, .question select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.question button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* answer new post form */
+.answer {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.answer label {
+  text-align: left;
+  display: block;
+}
+.answer h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.answer input, .answer textarea, .answer select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.answer button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.checkbox1 {
+  height: 16px;
+  width: 16px;
+  float: left;
+  align-self: center;
 }

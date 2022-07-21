@@ -1,13 +1,26 @@
-import capLogo from './capLogo.png'
+import capLogo from './Assets/capLogo.png'
+import {Row,Col,Navbar} from 'react-bootstrap';
 
-const  Navbar= () => {
+
+
+function createNavBar() {
     return (  
-        <nav className="navbar">
-            <img src={capLogo} alt="logo" height={100} width={100}/>
-
-            <h1>Psy-STEM</h1>
-        </nav>
+        <Navbar>
+            <Row>
+                    <Col>
+                        <img src={capLogo} className="logo" alt="logo" height={60} width={100}/>
+                        <h1>Psy-STEM</h1>
+                    </Col>   
+                    <Col className="navCol2">
+                        <div class="input-group" className='justify-content-md-center'>
+                            <input type="search" class="form-control rounded" className="search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        </div>
+                    </Col>
+                    <Col>
+                    </Col>
+            </Row>
+        </Navbar>
     );
 }
  
-export default Navbar;
+export default createNavBar;

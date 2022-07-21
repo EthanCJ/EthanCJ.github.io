@@ -5,35 +5,52 @@ import Create from './Create';
 import PostDetails from './PostDetails';
 import NotFound from './NotFound';
 import LeftNav from './Leftnav';
+import { Col,Row,Container } from 'react-bootstrap';
+import Answer from './Create answer';
+import Question from './Create question';
+import TopicsHome from './TopicsHome';
 
 function App() {
-  const title='This is the website title';
-  const likes=50;
-
   return (
     <Router>
       <div className="App">
         <Navbar/>
-        <LeftNav/>
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-                <Home/>
-            </Route>
+        <Container>
+          <Row>
+            <Col><LeftNav/></Col>
+            <Col className="col2">
+            <div className="content">
+              <Switch>
+                <Route exact path="/">
+                    <Home/>
+                </Route>
 
-            <Route exact path="/create">
-                <Create/>
-            </Route>
+                <Route exact path="/create">
+                    <Create/>
+                </Route>
 
-            <Route exact path="/posts/:id">
-                <PostDetails/>
-            </Route>
+                <Route exact path="/answer">
+                    <Answer/>
+                </Route>
 
-            <Route path="*">
-                <NotFound/>
-            </Route>
-          </Switch>
-        </div>
+                <Route exact path="/question">
+                    <Question/>
+                </Route>
+
+                <Route exact path="/posts/:id">
+                    <PostDetails/>
+                </Route>
+
+                <Route path="*">
+                    <NotFound/>
+                </Route>
+              </Switch>
+            </div>
+            </Col>
+            <Col><TopicsHome/></Col>
+          </Row>
+        </Container>
+
         
       </div>
     </Router>

@@ -10,7 +10,9 @@ const PostList = ({posts,title}) => {
                     <Link to={`/posts/${post.id}`}>
                         <h2>{post.title}</h2>
                         <p>Sujet: {post.topic}</p>
-                        <button>Like</button>
+                        <button>Like {post.likes}</button>
+                        <button>Share</button>
+                        <button>Report</button>
                     </Link>
                 </div>
             ))}
