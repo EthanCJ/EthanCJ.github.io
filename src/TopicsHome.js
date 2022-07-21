@@ -2,7 +2,7 @@ import TopicsList from "./TopicsList";
 import useFetch from "./useFetch";
 
 const TopicsHome = () => {
-    const {data: topics,isPending,error}=useFetch('http://localhost:8000/topics');
+    const {data: topics,isPending,error}=useFetch('https://my-json-server.typicode.com/EthanCJ/SEG-JSON-DB/topics');
 
     return ( 
         <div className="topicsHome">

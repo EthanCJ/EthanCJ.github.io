@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const PostDetails = () => {
     const {id}=useParams();
-    const {data:post,error,isPending}=useFetch('http://localhost:8000/posts/'+id);
+    const {data:post,error,isPending}=useFetch('https://my-json-server.typicode.com/EthanCJ/SEG-JSON-DB/posts/'+id);
 
     return ( 
     <div className="post-details">

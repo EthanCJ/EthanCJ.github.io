@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Answer = () => {
     const [title,setTitle]=useState('');
     const [body,setBody]=useState('');
     const [user,setUser]=useState('');
     const [topic,setTopic]=useState('sci');
-    const history=useHistory();
+    const navigate=useNavigate();
 
     const handleSubmit=(e)=>{
         e.preventDefault();
@@ -18,7 +18,7 @@ const Answer = () => {
             body: JSON.stringify(post)
         })
 
-        history.push('/')
+        navigate('/')
     }
 
     return ( 

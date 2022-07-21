@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Create from './Create';
 import PostDetails from './PostDetails';
 import NotFound from './NotFound';
@@ -20,31 +20,19 @@ function App() {
             <Col><LeftNav/></Col>
             <Col className="col2">
             <div className="content">
-              <Switch>
-                <Route exact path="/">
-                    <Home/>
-                </Route>
+              <Routes>
+                <Route path="/" element={<Home/>}/>
 
-                <Route exact path="/create">
-                    <Create/>
-                </Route>
+                <Route path="/create" element={<Create/>}/>
 
-                <Route exact path="/answer">
-                    <Answer/>
-                </Route>
+                <Route path="/answer" element={<Answer/>}/>
 
-                <Route exact path="/question">
-                    <Question/>
-                </Route>
+                <Route path="/question" element={<Question/>}/>
 
-                <Route exact path="/posts/:id">
-                    <PostDetails/>
-                </Route>
+                <Route path="/posts/:id" element ={<PostDetails/>}/>
 
-                <Route path="*">
-                    <NotFound/>
-                </Route>
-              </Switch>
+                <Route path="*"element={<NotFound/>}/>
+              </Routes>
             </div>
             </Col>
             <Col><TopicsHome/></Col>

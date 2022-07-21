@@ -1,24 +1,24 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Question = () => {
     const [title,setTitle]=useState('');
     const [body,setBody]=useState('');
     const [user,setUser]=useState('');
     const [topic,setTopic]=useState('sci');
-    const history=useHistory();
+    const navigate=useNavigate();
 
     const handleSubmit=(e)=>{
         e.preventDefault();
         const post={title,body,user,topic};
 
-        fetch('http://localhost:8000/posts',{
+        fetch('https://my-json-server.typicode.com/EthanCJ/SEG-JSON-DBs/posts',{
             method: 'POST',
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(post)
         })
 
-        history.push('/')
+        navigate('/')
     }
 
     return ( 
