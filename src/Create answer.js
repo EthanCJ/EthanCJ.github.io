@@ -12,7 +12,7 @@ const Answer = () => {
         e.preventDefault();
         const post={title,body,user,topic};
 
-        fetch('http://localhost:8000/posts',{
+        fetch('https://my-json-server.typicode.com/EthanCJ/SEG-JSON-DBs/posts',{
             method: 'POST',
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(post)
